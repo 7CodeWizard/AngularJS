@@ -1,5 +1,2 @@
-<div class="container">
-    <h1>App Component</h1>
-
-    <app-server></app-server>
-</div>
+<p>Server name {{ ServerName }} With PID {{ ServerPID }} is {{ ServerStatus }}</p>
+<button [disabled]="buttonState" (click)="toggleServerStatus()">Toggle Server Status</button>
