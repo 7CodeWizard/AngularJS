@@ -1,2 +1,3 @@
-<p>Server name {{ ServerName }} With PID {{ ServerPID }} is {{ ServerStatus }}</p>
-<button [disabled]="buttonState" (click)="toggleServerStatus()">Toggle Server Status</button>
+ <input type="text" name="" id="" [(ngModel)]="FirstName" [value]="FirstName"><br>
+ My First Name: {{FirstName}} <br>
+ <button (click)="ClearSearch()" [disabled]="FirstName === ''">Clear</button>
