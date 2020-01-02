@@ -6,19 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  flag = true;
-
-  ToogleFlag(){
-    this.flag = !this.flag
-    return this.flag;
-  }
-
-  getColor(){
-    if(this.flag === true){
-      return 'green';
-    }
-    else{
-      return 'red';
-    }
+  studentRoster = ['Arya', 'Rohit', 'Imran']
+  currentName = '';
+  add(){
+    this.studentRoster.push(this.currentName)
   }
 }
