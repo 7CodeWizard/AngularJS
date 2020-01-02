@@ -1,9 +1,7 @@
-<div class="container mt-5">
-    <h1 [ngStyle]="{color: getColor()}">This is a exmaple of NgIf:- </h1>
-    <h2 [ngClass]="{'white': flag}">This is just an example of Ngclass</h2>
-    <p *ngIf="flag; else elseblock">Flag is True</p>
-    <ng-template #elseblock>
-        <p>Flag is Flase</p>
-    </ng-template>
-    <button (click)="ToogleFlag()" class="btn btn-primary"> Toggle Button</button>
+<div class="container">
+    <h2>Student Roster</h2>
+    <input type="text" name="" id="" placeholder="name" [(ngModel)]="currentName">
+    <button (click)="add()">Submit Student Name</button>
+
+    <li *ngFor="let names of studentRoster">{{names}}</li>
 </div>
