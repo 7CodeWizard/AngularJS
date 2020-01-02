@@ -6,16 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = '';
-  state = false;
-  ResetName(){
-    this.name = '';
-  }
+  flag = true;
 
-  checkName(){
-    if(this.name === ''){
-      this.state = true;
-      return this.state;
-    }
+  ToogleFlag(){
+    this.flag = !this.flag
+    return this.flag;
   }
 }
