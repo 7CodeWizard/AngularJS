@@ -1,5 +1,9 @@
-<label for="Fname">First Name : </label>
-<input type="text" name="Fname" id="" placeholder="First Name" [(ngModel)]="name">
+<h1>This is a exmaple of NgIf:- </h1>
 
-<p>{{name}}</p>
-<button (click)="ResetName()" [disabled]="checkName()">Reset Name</button>
+<p *ngIf="flag; else elseblock">Flag is True</p>
+
+<ng-template #elseblock>
+    <p>Flag is Flase</p>
+</ng-template>
+
+<button (click)="ToogleFlag()"> Toggle Button</button>
