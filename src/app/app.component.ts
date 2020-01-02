@@ -6,11 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  FirstName = '';
-  btnState = true;
-  ClearSearch(){
-    this.FirstName = '';
+  name = '';
+  state = false;
+  ResetName(){
+    this.name = '';
   }
-  
-  
+
+  checkName(){
+    if(this.name === ''){
+      this.state = true;
+      return this.state;
+    }
+  }
 }
