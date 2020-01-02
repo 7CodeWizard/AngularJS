@@ -1,3 +1,5 @@
- <input type="text" name="" id="" [(ngModel)]="FirstName" [value]="FirstName"><br>
- My First Name: {{FirstName}} <br>
- <button (click)="ClearSearch()" [disabled]="FirstName === ''">Clear</button>
+<label for="Fname">First Name : </label>
+<input type="text" name="Fname" id="" placeholder="First Name" [(ngModel)]="name">
+
+<p>{{name}}</p>
+<button (click)="ResetName()" [disabled]="checkName()">Rest Name</button>
