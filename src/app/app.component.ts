@@ -6,9 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  studentRoster = ['Arya', 'Rohit', 'Imran']
-  currentName = '';
-  add(){
-    this.studentRoster.push(this.currentName)
+  state = true;
+  counter = [];
+
+  buttonToggle(){
+    this.state = !this.state;
+    this.counter.push(this.counter.length + 1)
+  }
+
+  getLength(){
+    if(this.counter.length>4){
+      return 'blue';
+    }else{
+      return 'red';
+    }
   }
 }

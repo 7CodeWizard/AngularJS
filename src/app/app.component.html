@@ -1,7 +1,5 @@
-<div class="container">
-    <h2>Student Roster</h2>
-    <input type="text" name="" id="" placeholder="name" [(ngModel)]="currentName">
-    <button (click)="add()">Submit Student Name</button>
-
-    <li *ngFor="let names of studentRoster">{{names}}</li>
+<div class="container mt-5">
+    <p *ngIf="this.state === true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident ab deleniti cum magnam! Molestias adipisci reiciendis fugiat deleniti et praesentium sapiente tenetur natus ratione dolores. Molestiae modi alias voluptas?</p>
+    <p *ngFor="let item of counter" [ngStyle]="{color: getLength()}">{{item}}</p>
+    <button (click)="buttonToggle()">Toggle</button>
 </div>
